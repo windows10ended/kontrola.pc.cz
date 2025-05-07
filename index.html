@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontrola počítače</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <img src="pictr1.png" alt="Logo" class="logo">
+
+    <div class="container">
+        <div id="loading-state" class="state">
+            <p>Moment prosím, kontroluje se váš počítač...</p>
+            <div class="spinner"></div>
+        </div>
+
+        <div id="results-state" class="state" style="display: none;">
+            <h2>Výsledky:</h2>
+            <p>Váš počítač byl zkontrolován a je připraven k recyklaci. Hodnota za počítač je <strong>110 Kč</strong>. Nyní odneste prosím počítač do jakéhokoli sběrného dvora IT nebo sběrného místa IT a dostanete <strong>110 Kč</strong>. Případně na sběrném místě IT poskytněte zaměstnancům Ray ID: <strong>259456894595</strong> a bude vám automaticky za počítač vydáno <strong>110 Kč</strong>.</p>
+
+            <hr>
+
+            <p>Pokud jste si na pomoc přivolali odborníka na IT a počítače nebo někoho, kdo tomu rozumí, můžete si usnadnit výměnu peněz - IT odborník vám může ihned předat 110 Kč a následně si nechat peníze z IT výběrového místa. Může to vám i IT odborníkovi usnadnit práci.</p>
+
+            <hr>
+
+            <p>Nezapomeňte si zálohovat všechna data z tohoto počítače na jiný disk nebo do nového počítače s Windows 11...</p>
+        </div>
+    </div>
+
+    <script>
+        // Skryje element pro načítání a zobrazí element s výsledky po 18 sekundách
+        setTimeout(function() {
+            document.getElementById('loading-state').style.display = 'none';
+            document.getElementById('results-state').style.display = 'block';
+        }, 18000); // 18000 milisekund = 18 sekund
+    </script>
+
+</body>
+</html>
