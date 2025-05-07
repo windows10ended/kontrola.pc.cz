@@ -1,53 +1,47 @@
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    color: #333; /* Tmavší šedá pro text */
+    color: #333; 
     line-height: 1.6;
-    margin: 0; /* Odebereme standardní margin */
-    padding: 0; /* Odebereme standardní padding */
+    margin: 0; 
+    padding: 0; 
 
-    /* Styly pro obrázek na pozadí - VÝRAZNÉ ZMENŠENÍ */
-    background-image: url('slikol.png'); /* Cesta k obrázku na pozadí */
-    background-size: 200px auto; /* Nastavíme pevnou šířku 200px a výšku automaticky - ZMĚNA */
-    /* Alternativně můžete zkusit background-size: 15% auto; pro velikost v procentech */
-    background-repeat: repeat; /* Standardně se opakuje, ale explicitně pro jistotu */
-    /* Pokud nechcete opakování, použijte background-repeat: no-repeat; a background-position: center center; */
-    background-position: center center; /* Ponecháme centrování pro případ 'no-repeat' */
-    background-attachment: fixed; /* Zajistí, že pozadí zůstane na místě při posouvání */
-    background-color: #f4f7f6; /* Záložní barva pozadí, pokud se obrázek nenačte */
+    background-image: url('slikol.png');
+    background-size: 200px auto; 
+    background-repeat: repeat; 
+    background-position: center center; 
+    background-attachment: fixed;
+    background-color: #f4f7f6; 
 
-    /* Flexbox pro centrování kontejneru */
     display: flex;
-    justify-content: center; /* Vycentruje horizontálně */
-    align-items: center; /* Vycentruje vertikálně */
-    min-height: 100vh; /* Zajistí, že body zabere minimálně celou výšku okna */
+    justify-content: center; 
+    align-items: center;
+    min-height: 100vh; 
 }
 
-/* Styly pro logo v levém horním rohu (beze změn) */
 .logo {
-    position: fixed; /* Zajistí, že logo zůstane na místě i při scrollování */
-    top: 30px; /* Ponecháme vzdálenost od horního okraje */
-    left: 30px; /* Ponecháme vzdálenost od levého okraje */
-    width: 200px; /* Velikost loga */
-    height: 120px; /* Velikost loga */
-    object-fit: cover; /* Jak se obrázek přizpůsobí rámečku */
-    z-index: 1000; /* Zajistí, že logo bude nad ostatním obsahem */
-    border-radius: 5px; /* Volitelné */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Volitelné */
+    position: fixed; 
+    top: 30px;
+    left: 30px; 
+    width: 200px;
+    height: 120px; 
+    object-fit: cover; 
+    z-index: 1000; 
+    border-radius: 5px; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); 
 }
 
 
 .container {
-    background-color: #fff; /* Bílý podklad pro obsah */
-    padding: 40px; /* Větší vnitřní odsazení */
-    /* Horní padding pro místo pod logem (beze změn, protože logo se nemění) */
+    background-color: #fff; 
+    padding: 40px; 
     padding-top: 180px;
-    border-radius: 12px; /* Zaoblené rohy */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Jemný stín */
-    max-width: 700px; /* Maximální šířka kontejneru */
-    width: 95%; /* Reaguje na menší obrazovky */
-    text-align: left; /* Text standardně zarovnaný vlevo */
-    opacity: 0; /* Začínáme s neviditelným kontejnerem */
-    animation: fadeIn 0.8s ease-out forwards; /* Animace objevení */
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    max-width: 700px; 
+    width: 95%; 
+    text-align: left;
+    opacity: 0; 
+    animation: fadeIn 0.8s ease-out forwards;
 }
 
 @keyframes fadeIn {
@@ -57,7 +51,6 @@ body {
 }
 
 
-/* Styly pro stav načítání */
 #loading-state {
     text-align: center;
     padding-top: 0;
@@ -69,7 +62,7 @@ body {
     color: #555;
 }
 
-/* Styly pro spinner */
+
 .spinner {
     border: 6px solid #f3f3f3;
     border-top: 6px solid #3498db;
@@ -85,7 +78,7 @@ body {
     100% { transform: rotate(360deg); }
 }
 
-/* Styly pro stav výsledků */
+
 #results-state {
     padding-top: 0;
 }
@@ -101,13 +94,13 @@ body {
     margin-bottom: 15px;
 }
 
-/* Zvýraznění */
+
 strong {
     color: #e74c3c;
     font-weight: bold;
 }
 
-/* Oddělovač */
+
 hr {
     border: none;
     height: 1px;
